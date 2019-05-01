@@ -1,0 +1,5 @@
+0:buffett
+1:berkshire
+2:stock
+3:market
+4:business

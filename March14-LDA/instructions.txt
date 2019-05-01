@@ -1,0 +1,30 @@
+- We	are	using	the	LDA	algorithm	described	in	today’s	lecture	to	compute	topics	for	a	corpus	of	documents.	
+- We	use	the	in-class	data	set	(sub-bullet	2).	
+- There	are	5	documents	in	the	corpus.	
+- You	will	have	to	use	the	CorpusParser	class	to	read	in	the	5	documents	and	generate	an	LDA	dataset	format	like	the	lecture	slide	26.	
+
+- You	will	produce	the	dataset	from	the	5	files	provided.	It	will	have	5	lines.	
+- Each	line	will	consist	of	5	terms,	corresponding	to	top	5	words	in	the	original	files.		
+- The	number	after	the	colon	will	be	the	frequency	of	the	word	in	that	file.	
+- An	example	line	could	be:	
+
+0	1:3	2:4	3:1	4:0	5:6 (doc 1)
+1	1:3	2:4	3:1	4:0	5:6 (doc 2)
+2	1:3	2:4	3:1	4:0	5:6 (doc 3)
+3	1:3	2:4	3:1	4:0	5:6 (doc 4)
+4	1:3	2:4	3:1	4:0	5:6 (doc 5)
+
+Steps:
+1. Using	the	CorpusParser	class,	read	in	the	data.	
+Done.
+2. Create	a	dataset	file (in term:frequency format)	summarizing	the	top	5	terms	for	the	corpus.	
+Done.
+
+3. Use	Spark	to	compute	the	LDA	topics.	Use	a	modified	LDAExample	class.	
+
+4. Experiment	with	number	of	topics,	K	=	2,	3,	4,	5.	
+
+Goals:
+- You	have	investigated	the	variation	of	topic	definitions	for	K	=	2,	3,	4,	5.	
+- You	must	be	able	to	display	the	topic	definitions	(in	terms	of	words)	and	the	document	descriptions	(in	terms	of	topics).
+	
